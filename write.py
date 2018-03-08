@@ -1,3 +1,5 @@
+# Hardcoded, used only for experimentation
+
 import os
 import datetime
 
