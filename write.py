@@ -52,20 +52,6 @@ def fileWrite(data, loss_func):
 
 	content = gen + embed + conv1 + caps1 + caps2 + out
 
-	'''
-	content = str.format('Gen.  | Epochs: {}, Words: {}, Length: {}, n_class: {}, Loss_func: {}\n'
-						 'Embed | embed_out: {}, trainable: {}\n'
-						 'Conv1 | filters: {}, kernel: {}, stride: {}, padding: {}, activ: {}\n'
-						 'Caps1 | dim_cap: {}, n_channels: {}, kernel: {}, stride: {}, padding: {}\n'
-						 'Caps2 | num_caps: {}, dim_caps: {}\n'
-						 'Out   | loss: {}, acc: {}, val_loss: {}, val_acc: {}\n',
-						 epochs, words, length, n_class, loss_func, embed[0], embed[1], 
-						 conv1[0], conv1[1], conv1[2], conv1[3], conv1[4], 
-						 caps1[0], caps1[1], caps1[2], caps1[3], caps1[4],
-						 caps2[0], caps2[1],
-						 loss, acc, vloss, vacc)
-	'''
-
 	f.write(content)
 
 	end = '=' * 58 + ' end ' + '=' * 58 + '\n'
